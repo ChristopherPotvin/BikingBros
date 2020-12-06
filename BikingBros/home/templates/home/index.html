@@ -1,0 +1,9 @@
+{% extends "home/layout.html" %} {% block body %}
+<h1>Hello from the landing page at base of app</h1>
+<h2>From here we can link to the other apps in our project as we make them!</h2>
+
+<p>ex:</p>
+<a href="{% url 'apitest:index' %}">Here is our apitest module</a>
+<!-- Add new links to pages or apps as you add them so we can navigate bewteen them from this home page -->
+<!-- To link like this we need to name our app in the urls.py file like this ex.'app_name="apitest"' -->
+{% endblock %}
